@@ -42,7 +42,7 @@ function Btn({ children, primary = false, href }: { children: ReactNode; primary
 
 export default function Hero() {
   return (
-    <section id="home" className="min-h-screen flex flex-col justify-end px-6 md:px-10 pt-24 pb-10 bg-[#F5F2EC]">
+    <section id="home" className="min-h-screen flex flex-col justify-end px-4 md:px-10 pt-24 pb-10 bg-[#F5F2EC]">
       <div className="max-w-7xl mx-auto w-full">
 
         {/* Top row */}
@@ -54,7 +54,7 @@ export default function Hero() {
             <span className="text-[10px] font-medium tracking-[0.18em] uppercase text-[#6B6B6B]">AI Developer & Engineer</span>
             <span className="text-[10px] font-medium tracking-[0.18em] uppercase text-[#0E0E0E]">Available for opportunities</span>
           </motion.div>
-          <motion.span variants={item} className="text-[10px] font-medium tracking-[0.18em] uppercase text-[#6B6B6B]">
+          <motion.span variants={item} className="hidden sm:block text-[10px] font-medium tracking-[0.18em] uppercase text-[#6B6B6B]">
             2022 — 2026
           </motion.span>
         </motion.div>
@@ -64,7 +64,7 @@ export default function Hero() {
           <motion.h1
             variants={item}
             className="font-serif font-black leading-[0.94] tracking-[-0.04em]"
-            style={{ fontSize: "clamp(4rem,13vw,11rem)" }}
+            style={{ fontSize: "clamp(2.5rem, 11vw, 10rem)" }}
           >
             Ubaith<br /><em className="font-normal italic">Sherif</em>
           </motion.h1>
@@ -73,10 +73,10 @@ export default function Hero() {
         {/* Bottom bar */}
         <motion.div
           variants={container} initial="hidden" animate="show"
-          className="grid grid-cols-1 md:grid-cols-[1fr_auto_auto] gap-6 md:gap-8 items-end pt-6 border-t border-[#0E0E0E]/10"
+          className="grid grid-cols-1 md:grid-cols-[1fr_auto_auto] gap-8 md:gap-12 items-end pt-6 border-t border-[#0E0E0E]/10"
         >
           {/* Description */}
-          <motion.p variants={item} className="text-[#6B6B6B] text-sm leading-relaxed max-w-sm">
+          <motion.p variants={item} className="text-[#6B6B6B] text-sm md:text-base leading-relaxed max-w-sm">
             I build <strong className="text-[#0E0E0E] font-medium">AI-powered systems</strong>, machine learning applications, and full-stack software that solve real-world problems in healthcare, accessibility, and the environment.
           </motion.p>
 
@@ -87,11 +87,12 @@ export default function Hero() {
           </motion.div>
 
           {/* Social links */}
-          <motion.div variants={item} className="flex flex-col items-start md:items-end gap-2">
+          <motion.div variants={item} className="flex flex-row md:flex-col items-center md:items-end gap-4 md:gap-2 mt-4 md:mt-0">
             {socialLinks.map(({ icon: Icon, href, label }) => (
               <a key={label} href={href} target={href.startsWith("http") ? "_blank" : undefined}
                 className="flex items-center gap-1.5 text-[#6B6B6B] hover:text-[#0E0E0E] text-[10px] font-medium tracking-[0.06em] uppercase transition-colors no-underline">
-                <Icon className="w-3 h-3" />{label} {href.startsWith("http") ? "↗" : ""}
+                <Icon className="w-4 h-4 md:w-3 md:h-3" />
+                <span className="hidden md:inline">{label} {href.startsWith("http") ? "↗" : ""}</span>
               </a>
             ))}
           </motion.div>

@@ -36,7 +36,7 @@ export default function Navbar() {
         scrolled ? "bg-[#F5F2EC]/92 backdrop-blur-md border-b border-[#0E0E0E]/10" : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-10 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 md:px-10 py-4 flex items-center justify-between">
         {/* Logo */}
         <a
           href="#"

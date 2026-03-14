@@ -83,20 +83,20 @@ export default function Projects() {
   return (
     <section id="projects" className="border-t border-[#0E0E0E]/10" ref={ref}>
       {/* Section header */}
-      <div className="max-w-7xl mx-auto px-6 md:px-10">
+      <div className="max-w-7xl mx-auto px-4 md:px-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="grid grid-cols-[auto_1fr] gap-10 items-end py-10 border-b border-[#0E0E0E]/10"
+          className="grid grid-cols-[auto_1fr] gap-6 md:gap-10 items-end py-10 border-b border-[#0E0E0E]/10"
         >
           <span className="font-serif text-sm italic text-[#6B6B6B]">03</span>
           <div className="flex justify-between items-end">
-            <h2 className="font-serif text-5xl md:text-6xl font-black leading-none tracking-tight">
+            <h2 className="font-serif text-4xl md:text-6xl font-black leading-none tracking-tight">
               Selected<br />
               <em className="font-normal italic">Work</em>
             </h2>
-            <span className="text-[10px] font-medium tracking-[0.18em] uppercase text-[#6B6B6B]">
+            <span className="text-[10px] hidden sm:block font-medium tracking-[0.18em] uppercase text-[#6B6B6B]">
               4 Projects
             </span>
           </div>
