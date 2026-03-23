@@ -11,7 +11,7 @@ export default function About() {
     { label: "Degree", value: "B.Tech AI & Data Science" },
     { label: "Institute", value: "United Institute of Technology" },
     { label: "Period", value: "2022 — 2026" },
-    { label: "Focus", value: "Healthcare AI · CV · NLP" },
+    { label: "Focus", value: "AI ML SOFTWARE DEVELOPER FULL STACK" },
   ];
 
   return (

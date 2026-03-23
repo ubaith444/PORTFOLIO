@@ -32,9 +32,8 @@ export default function Navbar() {
       initial={{ y: -60, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? "bg-[#F5F2EC]/92 backdrop-blur-md border-b border-[#0E0E0E]/10" : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "bg-[#F5F2EC]/92 backdrop-blur-md border-b border-[#0E0E0E]/10" : "bg-transparent"
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 md:px-10 py-4 flex items-center justify-between">
         {/* Logo */}
@@ -60,7 +59,9 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#"
+            href="https://ubaith-portfolio.web.app/resume/resume.pdf" // REPLACE WITH YOUR PDF URL
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-ink text-xs font-medium tracking-[0.06em] uppercase border-b border-ink pb-px no-underline hover:text-muted transition-colors"
           >
             Résumé ↗
@@ -99,7 +100,7 @@ export default function Navbar() {
                   {link.label}
                 </a>
               ))}
-              <a href="#" className="text-ink text-sm font-medium tracking-[0.06em] uppercase border-b border-ink pb-px w-fit no-underline mt-2">
+              <a href="https://ubaith-portfolio.web.app/resume/resume.pdf" target="_blank" rel="noopener noreferrer" className="text-ink text-sm font-medium tracking-[0.06em] uppercase border-b border-ink pb-px w-fit no-underline mt-2">
                 Résumé ↗
               </a>
             </div>

@@ -19,7 +19,7 @@ const projects = [
       "Visualization of detection results",
       "Environmental monitoring application",
     ],
-    github: "https://github.com/ubaith444",
+    github: "https://github.com/ubaith444/Microplastic-Detection",
     accent: "#10b981",
   },
   {
@@ -36,7 +36,7 @@ const projects = [
       "Gesture-to-text conversion system",
       "Accessibility solution for hearing-impaired users",
     ],
-    github: "https://github.com/ubaith444",
+    github: "https://github.com/ubaith444/ASL-Recognition",
     accent: "#3B82F6",
   },
   {
@@ -53,7 +53,7 @@ const projects = [
       "Visualization of groups and purchasing patterns",
       "Insights generation for marketing campaigns",
     ],
-    github: "https://github.com/ubaith444",
+    github: "https://github.com/ubaith444/Cartify",
     accent: "#f59e0b",
   },
   {
@@ -71,7 +71,7 @@ const projects = [
       "Secure OTP authentication",
       "Notification and alert system",
     ],
-    github: "https://github.com/ubaith444",
+    github: "https://github.com/ubaith444/Blood-Donation-System",
     accent: "#ef4444",
   },
 ];

@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import { FiGithub, FiLinkedin, FiMail, FiArrowDown } from "react-icons/fi";
 
 const socialLinks = [
-  { icon: FiGithub, href: "https://github.com/ubaithsherif", label: "GitHub" },
-  { icon: FiLinkedin, href: "https://linkedin.com/in/ubaithsherif", label: "LinkedIn" },
+  { icon: FiGithub, href: "https://github.com/ubaith444", label: "GitHub" },
+  { icon: FiLinkedin, href: "https://www.linkedin.com/in/ubaith-sherif-4235a5256", label: "LinkedIn" },
   { icon: FiMail, href: "mailto:ubaithsherif22@gmail.com", label: "Email" },
 ];
 
@@ -90,6 +90,7 @@ export default function Hero() {
           <motion.div variants={item} className="flex flex-row md:flex-col items-center md:items-end gap-4 md:gap-2 mt-4 md:mt-0">
             {socialLinks.map(({ icon: Icon, href, label }) => (
               <a key={label} href={href} target={href.startsWith("http") ? "_blank" : undefined}
+                rel="noopener noreferrer"
                 className="flex items-center gap-1.5 text-[#6B6B6B] hover:text-[#0E0E0E] text-[10px] font-medium tracking-[0.06em] uppercase transition-colors no-underline">
                 <Icon className="w-4 h-4 md:w-3 md:h-3" />
                 <span className="hidden md:inline">{label} {href.startsWith("http") ? "↗" : ""}</span>
